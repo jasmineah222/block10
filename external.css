@@ -13,46 +13,50 @@ body {
 
 #boxa {
     grid-column: span 3;
-    background-color: whitesmoke;
+    background-color: turquoise;
     height:200px;
     width: calc(200px*3 + 25px*2 + 10px*4);
     justify-self: center;
     padding: 10px;
 }
 
-#top , #boxb {
+#top {
+    grid-column: span 3;
+    justify-self: center;
+    text-align: center;
+    background-color:white;
+    width: 112.5%;
+    height: 175%;
+}
+
+#boxb {
     grid-column: span 3;
     justify-self: center;
     text-align: center;
     background-color:lightgreen;
-    width: 100%
+    width: 100%;
 }
 
 
 .box1, .box2, .box3 {
-    background-color: whitesmoke;
+    background-color: turquoise;
     height:100px;
     width: 200px;
     justify-self: center;
     padding: 10px;
 }
 
-.pink{
+.pink, .yellow{
     background-color:pink;
     border-radius: 150px;
-    height:100px;
-    width: 100px;
+    height:75px;
+    width: 75px;
     justify-content: center;
     padding: 10px;
 }
 
 .yellow{
     background-color:yellow;
-    border-radius: 150px;
-    height:100px;
-    width: 100px;
-    justify-content: center;
-    padding: 10px;
 }
 
 #pcir{
@@ -61,11 +65,40 @@ body {
     top: calc(25px*6);
 }
 
-#p1, #p2, #p3 {
-    border-radius: 150px;
-    height:50px;
-    width: 50px;
+#ycir{
+    position:absolute;
+    transform:translateX(90px);
+    top: calc(25px*3.25);
 }
 
+#p1, #p2, #p3, #y {
+    border-radius: 150px;
+    height:30px;
+    width: 30px;
+}
+
+#p1{
+    position:absolute;
+    transform:translateX(10px);
+    top: calc(25px*3.25);
+}
+
+#p2{
+    position:absolute;
+    transform:translateX(10px);
+    top: calc(25px*6);
+}
+
+#p3{
+    position:absolute;
+    transform:translateX(300px);
+    top: calc(25px*3.5);
+}
+
+#y{
+    position:absolute;
+    transform:translateX(100px);
+    top: calc(25px*10);
+}
 
 
